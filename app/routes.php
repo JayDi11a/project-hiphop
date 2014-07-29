@@ -15,3 +15,21 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+Route::get('/new', function() {
+
+    $view  = '<form method="POST">';
+    $view .= 'Title: <input type="text" name="title">';
+    $view .= '<input type="submit">';
+    $view .= '</form>';
+    return $view;
+
+});
+
+Route::post('/new', function() {
+
+    $input =  Input::all();
+    print_r($input);
+
+});
