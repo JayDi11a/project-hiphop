@@ -3,15 +3,14 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTables extends Migration {
+class CreateGoodness extends Migration {
 
 	/**
 	 * Run the migrations.
 	 *
 	 * @return void
 	 */
-	public function up() {
-
+	public function up()	{
 		# Create the authors table
 		Schema::create('artists', function($table) {
 
@@ -52,7 +51,6 @@ class CreateTables extends Migration {
 
 		});
 
-
 		# Create the tags table
 		Schema::create('tags', function($table) {
 
@@ -85,9 +83,6 @@ class CreateTables extends Migration {
 			$table->foreign('tag_id')->references('id')->on('tags');
 
 		});
-
-
-
 	}
 
 	/**
@@ -95,7 +90,7 @@ class CreateTables extends Migration {
 	 *
 	 * @return void
 	 */
-	public function down() {
+	public function down()	{
 
 		Schema::table('songs', function($table) {
 			$table->dropForeign('songs_artist_id_foreign'); # table_fields_foreign
@@ -112,4 +107,5 @@ class CreateTables extends Migration {
 		Schema::drop('tags');
 		Schema::drop('song_tag');
 	}
-}	
+
+}
