@@ -1,0 +1,45 @@
+body {
+	padding:20px;
+}
+
+.logo {
+	width:500px;
+	margin-bottom:20px;
+	display:block;
+}
+
+section {
+	min-height:200px;
+}
+
+h2 {
+
+}
+
+.cover {
+	float:left;
+	margin-right:10px;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration:underline;
+}
+
+.flash-message {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:yellow;
+	text-align:center;
+	padding:5px;
+}
+
+label {
+	display:block;
+	text-transform:uppercase;
+}
+
+.error {
+	color:red;
+}
