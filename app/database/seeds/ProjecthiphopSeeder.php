@@ -39,9 +39,9 @@ class FoobooksSeeder extends Seeder {
 		$joe->name = 'Joe';
 		$joe->save();
 
-		$lucyperl = new Artist;
-		$lucyperl->name = 'Lucy Perl';
-		$lucyperl->save();
+		$lucypearl = new Artist;
+		$lucypearl->name = 'Lucy Pearl';
+		$lucypearl->save();
 
 		$erick = new Artist;
 		$erick->name = 'Erick Sermon';
@@ -67,46 +67,95 @@ class FoobooksSeeder extends Seeder {
 
 		# Songs		
 		$dreams = new Song;
-		$gatsby->title = 'The Great Gatsby';
-		$gatsby->published = 1925;
-		$gatsby->cover = 'http://img2.imagesbn.com/p/9780743273565_p0_v4_s114x166.JPG';
-		$gatsby->purchase_link = 'http://www.barnesandnoble.com/w/the-great-gatsby-francis-scott-fitzgerald/1116668135?ean=9780743273565';
-
+		$dreams->title = 'Dreams';
+		$dreams->published = 1973;
+		$dreams->cover = 'http://en.wikipedia.org/wiki/Funky_Serenity#mediaviewer/File:Funky_Serenity.jpg';
+		
 		# Associate has to be called *before* the book is created (save()) 
-		$gatsby->author()->associate($fitzgerald); # Equivalent of $gatsby->author_id = $fitzgerald->id
-		$gatsby->save();
+		$dreams->artist()->associate($lewis); # Equivalent of $gatsby->author_id = $fitzgerald->id
+		$dreams->save();
 
 		# Attach has to be called *after* the book is created (save()), 
 		# since resulting `book_id` is needed in the book_tag pivot table
-		$gatsby->tags()->attach($novel); 
-		$gatsby->tags()->attach($fiction); 
-		$gatsby->tags()->attach($classic); 
-		$gatsby->tags()->attach($wealth); 
+		$dreams->tags()->attach($soul); 
+		$dreams->tags()->attach($funk); 
+		$dreams->tags()->attach($disco); 
+		$dreams->tags()->attach($original); 
 
-		$belljar = new Book;
-		$belljar->title = 'The Bell Jar';
-		$belljar->published = 1963;
-		$belljar->cover = 'http://img1.imagesbn.com/p/9780061148514_p0_v2_s114x166.JPG';
-		$belljar->purchase_link = 'http://www.barnesandnoble.com/w/bell-jar-sylvia-plath/1100550703?ean=9780061148514';
-		$belljar->author()->associate($plath);
-		$belljar->save();
+		$outsidelove = new Song;
+		$outsidelove->title = 'Outside Love';
+		$outsidelove->published = 1970;
+		$outsidelove->cover = 'http://www.geocities.jp/hideki_wtnb/brethren1st-4.jpg';
+		$outsidelove->artist()->associate($brethren);
+		$outsidelove->save();
 
-		$belljar->tags()->attach($novel); 	
-		$belljar->tags()->attach($fiction); 
-		$belljar->tags()->attach($classic); 
-		$belljar->tags()->attach($women); 
+		$outsidelove->tags()->attach($soul); 	
+		$outsidelove->tags()->attach($funk); 
+		$outsidelove->tags()->attach($disco); 
+		$outsidelove->tags()->attach($original); 
 
-		$cagedbird = new Book;
-		$cagedbird->title = 'I Know Why the Caged Bird Sings';
-		$cagedbird->published = 1969;
-		$cagedbird->cover = 'http://img1.imagesbn.com/p/9780345514400_p0_v1_s114x166.JPG';
-		$cagedbird->purchase_link = 'http://www.barnesandnoble.com/w/i-know-why-the-caged-bird-sings-maya-angelou/1100392955?ean=9780345514400';
-		$cagedbird->author()->associate($angelou);
-		$cagedbird->save();
-		$cagedbird->tags()->attach($autobiography); 
-		$cagedbird->tags()->attach($nonfiction); 
-		$cagedbird->tags()->attach($classic); 
-		$cagedbird->tags()->attach($women);
+		$mysticbrew = new Song;
+		$mysticbrew->title = 'Mystic Brew';
+		$mysticbrew->published = 1972;
+		$mysticbrew->cover = 'http://en.wikipedia.org/wiki/The_Two_Headed_Freap#mediaviewer/File:The_Two_Headed_Freap.jpg';
+		$mysticbrew->artist()->associate($foster);
+		$mysticbrew->save();
+		$mysticbrew->tags()->attach($soul); 
+		$mysticbrew->tags()->attach($funk); 
+		$mysticbrew->tags()->attach($disco); 
+		$mysticbrew->tags()->attach($original);
+
+
+		$warning = new Song;
+		$warning->title = 'Warning (Keep Bouncing)';
+		$warning->published = 2010;
+		$warning->cover = 'http://en.wikipedia.org/wiki/Album_of_the_Year_(Black_Milk_album)#mediaviewer/File:BlackMilkAlbumoftheYear.jpg';
+		$warning->artist()->associate($blackmilk);
+		$warning->save();
+		$warning->tags()->attach($hiphop); 
+		$warning->tags()->attach($inspired); 
+		
+		$shortysaid = new Song;
+		$shortysaid->title = 'Shorty Said';
+		$shortysaid->published = 2010;
+		$shortysaid->cover = 'http://en.wikipedia.org/wiki/Shut_Up,_Dude#mediaviewer/File:Das-racist-shut-up-dude-front-nahright-450x450.jpg';
+		$shortysaid->artist()->associate($dasracist);
+		$shortysaid->save();
+		$shortysaid->tags()->attach($alternative); 
+		$shortysaid->tags()->attach($inspired); 
+		
+
+		$justrelax = new Song;
+		$justrelax->title = 'Warning (Keep Bouncing)';
+		$justrelax->published = 2007;
+		$justrelax->cover = 'http://en.wikipedia.org/wiki/Ain't_Nothin'_Like_Me#mediaviewer/File:Joeaint.jpg';
+		$justrelax->artist()->associate($joe);
+		$justrelax->save();
+		$justrelax->tags()->attach($randb); 
+		$justrelax->tags()->attach($inspired); 
+		
+
+		$pearlsway = new Song;
+		$pearlsway->title = 'Lucy Pearls Way';
+		$pearlsway->published = 2000;
+		$pearlsway->cover = 'http://en.wikipedia.org/wiki/Lucy_Pearl_(album)#mediaviewer/File:Lucy_Pearl_album.jpg';
+		$pearlsway->artist()->associate($lucypearl);
+		$pearlsway->save();
+		$pearlsway->tags()->attach($randb);
+		$pearlsway->tags()->attach($neosoul);
+		$pearlsway->tags()->attach($hiphop);
+		$pearlsway->tags()->attach($funk);
+		$pearlsway->tags()->attach($inspired); 
+		
+		$geniusedub = new Song;
+		$geniusedub->title = 'Genius E Dub';
+		$geniusedub->published = 2001;
+		$geniusedub->cover = 'http://en.wikipedia.org/wiki/Music_(Erick_Sermon_album)#mediaviewer/File:Erick_Sermon_-_Music.jpg';
+		$geniusedub->artist()->associate($erick);
+		$geniusedub->save();
+		$geniusedub->tags()->attach($hiphop); 
+		$geniusedub->tags()->attach($inspired); 
+		
 
 		$user = new User;
 		$user->email = 'susan@susanbuck.net';
