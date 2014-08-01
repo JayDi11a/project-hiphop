@@ -1,0 +1,6 @@
+<?
+class Song extends Eloquent {
+	
+	
+}
+
