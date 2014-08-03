@@ -15,12 +15,12 @@
 
 	<div>
 		View as:
-		<a href='/book/?format=json' target='_blank'>JSON</a> | 
-		<a href='/book/?format=pdf' target='_blank'>PDF</a>
+		<a href='/song/?format=json' target='_blank'>JSON</a> | 
+		<a href='/song/?format=pdf' target='_blank'>PDF</a>
 	</div>
 
 	<div>
-		<a href='/book/create'>+ Add a song</a>
+		<a href='/song/create'>+ Add a song</a>
 	</div>
 
 
@@ -36,7 +36,7 @@
 	@foreach($songs as $title => $song)
 
 		<section>
-			<img class='cover' src='{{ $book['cover'] }}'>
+			<img class='cover' src='{{ $song['cover'] }}'>
 
 			<h2>{{ $song['title'] }}</h2>
 

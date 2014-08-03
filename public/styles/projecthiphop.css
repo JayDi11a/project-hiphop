@@ -5,6 +5,8 @@ body {
 .logo {
 	width:500px;
 	margin-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
 	display:block;
 }
 

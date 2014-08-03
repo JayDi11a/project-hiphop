@@ -2,9 +2,9 @@
 <html>
 <head>
 
-	<title>@yield('title','A Tribe Called Quest')</title>
+	<title>@yield('title','Electric Relaxation by A Tribe Called Quest')</title>
 
-	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+	<link href="//bootswatch.com/slate/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/styles/projecthiphop.css" type="text/css">
 
 	@yield('head')
@@ -17,11 +17,11 @@
 		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
 	@endif
 
-	<a href='/'><img class='logo' src='<?php echo URL::asset('/images/archive-logo-white.png'); ?>' alt='Project Hip Hop Logo'></a>
+	<a href='/'><img class='logo' src='<?php echo URL::asset('/images/archive-logo-white-2.png'); ?>' alt='Project Hip Hop Logo'></a>
 
 	@if(Auth::check())
 		<a href='/logout'>Log out {{ Auth::user()->email; }}</a><br><br>
-		<a href='/song'>View all Books</a> | 
+		<a href='/song'>View all Songs</a> | 
 		<a href='/tag'>View all Tags</a>  |
 		<a href='/song/search'>Search (with Ajax!)</a>
 	@else 

@@ -1,16 +1,16 @@
 <?php
 
-class FoobooksSeeder extends Seeder {
+class ProjecthiphopSeeder extends Seeder {
 
 
 	public function run() {
 
 		# Clear the tables to a blank slate
 		DB::statement('SET FOREIGN_KEY_CHECKS=0'); # Disable FK constraints so that all rows can be deleted, even if there's an associated FK
-		DB::statement('TRUNCATE books');
-		DB::statement('TRUNCATE authors');
+		DB::statement('TRUNCATE songs');
+		DB::statement('TRUNCATE artists');
 		DB::statement('TRUNCATE tags');
-		DB::statement('TRUNCATE book_tag');
+		DB::statement('TRUNCATE song_tag');
 		DB::statement('TRUNCATE users');
 
 		# Artists
@@ -128,7 +128,7 @@ class FoobooksSeeder extends Seeder {
 		$justrelax = new Song;
 		$justrelax->title = 'Warning (Keep Bouncing)';
 		$justrelax->published = 2007;
-		$justrelax->cover = 'http://en.wikipedia.org/wiki/Ain't_Nothin'_Like_Me#mediaviewer/File:Joeaint.jpg';
+		$justrelax->cover = 'http://img1.wikia.nocookie.net/__cb20120327203448/lyricwiki/images/0/04/Joe_-_Ain%27t_Nothin%27_Like_Me.jpg';
 		$justrelax->artist()->associate($joe);
 		$justrelax->save();
 		$justrelax->tags()->attach($randb); 
@@ -158,8 +158,8 @@ class FoobooksSeeder extends Seeder {
 		
 
 		$user = new User;
-		$user->email = 'susan@susanbuck.net';
-		$user->password = Hash::make('susan');
+		$user->email = 'gerald@geraldtrotman.net';
+		$user->password = Hash::make('gerald');
 		$user->save();
 
 

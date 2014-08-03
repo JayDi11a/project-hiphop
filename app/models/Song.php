@@ -1,4 +1,4 @@
-<?
+<?php
 
 class Song extends Eloquent {
 
@@ -60,14 +60,14 @@ class Song extends Eloquent {
 		# Otherwise, just fetch all books
 		else {
 			# Eager load tags and author
-			$books = Song::with('tags','artist')->get();
+			$songs = Song::with('tags','artist')->get();
 		}
 
-		return $books;	
+		return $songs;	
 	}
 
 
 }	
 	
-}
+
 
