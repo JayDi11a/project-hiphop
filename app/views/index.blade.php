@@ -1,7 +1,7 @@
 @extends('_master')
 
 @section('title')
-	Electric Relaxation by A Tribe Called Quest
+	Welcome to Project Hip Hop
 @stop
 
 @section('content')

@@ -126,7 +126,7 @@ class ProjecthiphopSeeder extends Seeder {
 		
 
 		$justrelax = new Song;
-		$justrelax->title = 'Warning (Keep Bouncing)';
+		$justrelax->title = 'Just Relax';
 		$justrelax->published = 2007;
 		$justrelax->cover = 'http://img1.wikia.nocookie.net/__cb20120327203448/lyricwiki/images/0/04/Joe_-_Ain%27t_Nothin%27_Like_Me.jpg';
 		$justrelax->artist()->associate($joe);
@@ -158,7 +158,7 @@ class ProjecthiphopSeeder extends Seeder {
 		
 
 		$user = new User;
-		$user->email = 'gerald@geraldtrotman.net';
+		$user->email = 'gerald@gerald.com';
 		$user->password = Hash::make('gerald');
 		$user->save();
 

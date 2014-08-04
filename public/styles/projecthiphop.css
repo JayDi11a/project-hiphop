@@ -1,5 +1,6 @@
 body {
 	padding:20px;
+	
 }
 
 .logo {
@@ -8,6 +9,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	display:block;
+
 }
 
 section {
