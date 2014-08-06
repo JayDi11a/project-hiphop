@@ -52,6 +52,7 @@
 
 			<a href='{{ $song['cover'] }}'>Purchase this book...</a>
 			<br>
+			
 			<a href='/song/edit/{{ $song->id }}'>Edit</a>
 		</section>
 

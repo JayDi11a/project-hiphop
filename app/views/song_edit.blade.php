@@ -5,10 +5,9 @@
 	Edit Song
 @stop
 
-
 @section('content')
 
-	{{ Form::model($song, ['method' => 'post', 'action' => ['BookController@postEdit', $book->id]]) }}
+	{{ Form::model($song, ['method' => 'post', 'action' => ['SongController@postEdit', $book->id]]) }}
 
 		<h2>Update: {{ $song->name }}</h2>
 

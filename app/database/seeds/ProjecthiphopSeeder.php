@@ -69,7 +69,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$dreams = new Song;
 		$dreams->title = 'Dreams';
 		$dreams->published = 1973;
-		$dreams->cover = 'http://en.wikipedia.org/wiki/Funky_Serenity#mediaviewer/File:Funky_Serenity.jpg';
+		$dreams->cover = 'http://upload.wikimedia.org/wikipedia/en/7/72/Funky_Serenity.jpg';
 		
 		# Associate has to be called *before* the book is created (save()) 
 		$dreams->artist()->associate($lewis); # Equivalent of $gatsby->author_id = $fitzgerald->id
@@ -97,7 +97,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$mysticbrew = new Song;
 		$mysticbrew->title = 'Mystic Brew';
 		$mysticbrew->published = 1972;
-		$mysticbrew->cover = 'http://en.wikipedia.org/wiki/The_Two_Headed_Freap#mediaviewer/File:The_Two_Headed_Freap.jpg';
+		$mysticbrew->cover = 'http://userserve-ak.last.fm/serve/_/88446831/The+Two+Headed+Freap++Cover.jpg';
 		$mysticbrew->artist()->associate($foster);
 		$mysticbrew->save();
 		$mysticbrew->tags()->attach($soul); 
@@ -109,7 +109,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$warning = new Song;
 		$warning->title = 'Warning (Keep Bouncing)';
 		$warning->published = 2010;
-		$warning->cover = 'http://en.wikipedia.org/wiki/Album_of_the_Year_(Black_Milk_album)#mediaviewer/File:BlackMilkAlbumoftheYear.jpg';
+		$warning->cover = 'http://upload.wikimedia.org/wikipedia/en/8/80/BlackMilkAlbumoftheYear.jpg';
 		$warning->artist()->associate($blackmilk);
 		$warning->save();
 		$warning->tags()->attach($hiphop); 
@@ -118,7 +118,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$shortysaid = new Song;
 		$shortysaid->title = 'Shorty Said';
 		$shortysaid->published = 2010;
-		$shortysaid->cover = 'http://en.wikipedia.org/wiki/Shut_Up,_Dude#mediaviewer/File:Das-racist-shut-up-dude-front-nahright-450x450.jpg';
+		$shortysaid->cover = 'http://upload.wikimedia.org/wikipedia/en/8/81/Das-racist-shut-up-dude-front-nahright-450x450.jpg';
 		$shortysaid->artist()->associate($dasracist);
 		$shortysaid->save();
 		$shortysaid->tags()->attach($alternative); 
@@ -138,7 +138,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$pearlsway = new Song;
 		$pearlsway->title = 'Lucy Pearls Way';
 		$pearlsway->published = 2000;
-		$pearlsway->cover = 'http://en.wikipedia.org/wiki/Lucy_Pearl_(album)#mediaviewer/File:Lucy_Pearl_album.jpg';
+		$pearlsway->cover = 'http://upload.wikimedia.org/wikipedia/en/a/af/Lucy_Pearl_album.jpg';
 		$pearlsway->artist()->associate($lucypearl);
 		$pearlsway->save();
 		$pearlsway->tags()->attach($randb);
@@ -150,7 +150,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$geniusedub = new Song;
 		$geniusedub->title = 'Genius E Dub';
 		$geniusedub->published = 2001;
-		$geniusedub->cover = 'http://en.wikipedia.org/wiki/Music_(Erick_Sermon_album)#mediaviewer/File:Erick_Sermon_-_Music.jpg';
+		$geniusedub->cover = 'http://upload.wikimedia.org/wikipedia/en/3/3f/Erick_Sermon_-_Music.jpg';
 		$geniusedub->artist()->associate($erick);
 		$geniusedub->save();
 		$geniusedub->tags()->attach($hiphop); 

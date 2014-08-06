@@ -4,7 +4,7 @@
 
 	<title>@yield('title','Electric Relaxation by A Tribe Called Quest')</title>
 
-	<link href="//bootswatch.com/slate/bootstrap.min.css" rel="stylesheet">
+	<link href="//bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/styles/projecthiphop.css" type="text/css">
 
 	@yield('head')
@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 	@if(Session::get('flash_message'))
 		<div class='flash-message'>{{ Session::get('flash_message') }}</div>
 	@endif
