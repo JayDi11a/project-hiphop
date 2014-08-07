@@ -71,37 +71,37 @@ Route::get('/debug/routes', 'DebugController@routes');
 // ! Misc Demo
 Explicit Routing
 -------------------------------------------------------------------------------------------------*/
-Route::get('/demo/csrf-example', 'DemoController@csrf');
-Route::get('/demo/collections', 'DemoController@collections');
-Route::get('/demo/js-vars', 'DemoController@jsVars');
+// Route::get('/demo/csrf-example', 'DemoController@csrf');
+// Route::get('/demo/collections', 'DemoController@collections');
+// Route::get('/demo/js-vars', 'DemoController@jsVars');
 
 
-/*-------------------------------------------------------------------------------------------------
-// ! CRUD Demo
-Explicit Routing
--------------------------------------------------------------------------------------------------*/
-Route::get('/crud-create', 'DemoController@crudCreate');
-Route::get('/crud-read', 'DemoController@crudRead');
-Route::get('/crud-update', 'DemoController@crudUpdate');
-Route::get('/crud-delete', 'DemoController@crudDelete');
+// /*-------------------------------------------------------------------------------------------------
+// // ! CRUD Demo
+// Explicit Routing
+// -------------------------------------------------------------------------------------------------*/
+// Route::get('/crud-create', 'DemoController@crudCreate');
+// Route::get('/crud-read', 'DemoController@crudRead');
+// Route::get('/crud-update', 'DemoController@crudUpdate');
+// Route::get('/crud-delete', 'DemoController@crudDelete');
 
 
-/*-------------------------------------------------------------------------------------------------
-// ! Queries Demo
-Explicit Routing
--------------------------------------------------------------------------------------------------*/
-Route::get('/collections', 'DemoController@collections');
-Route::get('/query-without-constraints', 'DemoController@queryWithoutConstraints');
-Route::get('/query-with-constraints', 'DemoController@queryWithConstraints');
-Route::get('/query-responsibility', 'DemoController@queryResponsibility');
-Route::get('/query-with-order', 'DemoController@queryWithOrder');
+// /*-------------------------------------------------------------------------------------------------
+// // ! Queries Demo
+// Explicit Routing
+// -------------------------------------------------------------------------------------------------*/
+// Route::get('/collections', 'DemoController@collections');
+// Route::get('/query-without-constraints', 'DemoController@queryWithoutConstraints');
+// Route::get('/query-with-constraints', 'DemoController@queryWithConstraints');
+// Route::get('/query-responsibility', 'DemoController@queryResponsibility');
+// Route::get('/query-with-order', 'DemoController@queryWithOrder');
 
 
-/*-------------------------------------------------------------------------------------------------
-// ! Query Relationship Demos
-Explicit Routing
--------------------------------------------------------------------------------------------------*/
-Route::get('/query-relationships-author', 'DemoController@queryRelationshipsAuthor');
-Route::get('/query-relationships-tags', 'DemoController@queryRelationshipstags');
-Route::get('/query-eager-loading-authors', 'DemoController@queryEagerLoadingAuthors');
-Route::get('/query-eager-loading-tags-and-authors', 'DemoController@queryEagerLoadingTagsAndAuthors');
+// /*-------------------------------------------------------------------------------------------------
+// // ! Query Relationship Demos
+// Explicit Routing
+// -------------------------------------------------------------------------------------------------*/
+// Route::get('/query-relationships-author', 'DemoController@queryRelationshipsAuthor');
+// Route::get('/query-relationships-tags', 'DemoController@queryRelationshipstags');
+// Route::get('/query-eager-loading-authors', 'DemoController@queryEagerLoadingAuthors');
+// Route::get('/query-eager-loading-tags-and-authors', 'DemoController@queryEagerLoadingTagsAndAuthors');

@@ -69,7 +69,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$dreams = new Song;
 		$dreams->title = 'Dreams';
 		$dreams->published = 1973;
-		$dreams->cover = 'http://upload.wikimedia.org/wikipedia/en/7/72/Funky_Serenity.jpg';
+		$dreams->cover = 'http://images.hhv.de/catalog/old_detail/00375/375559.jpg';
 		
 		# Associate has to be called *before* the book is created (save()) 
 		$dreams->artist()->associate($lewis); # Equivalent of $gatsby->author_id = $fitzgerald->id
@@ -97,7 +97,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$mysticbrew = new Song;
 		$mysticbrew->title = 'Mystic Brew';
 		$mysticbrew->published = 1972;
-		$mysticbrew->cover = 'http://userserve-ak.last.fm/serve/_/88446831/The+Two+Headed+Freap++Cover.jpg';
+		$mysticbrew->cover = 'http://o.scdn.co/300/28e8d6c3d2971cd12748e87788478efaf1e04b72';
 		$mysticbrew->artist()->associate($foster);
 		$mysticbrew->save();
 		$mysticbrew->tags()->attach($soul); 
@@ -109,7 +109,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$warning = new Song;
 		$warning->title = 'Warning (Keep Bouncing)';
 		$warning->published = 2010;
-		$warning->cover = 'http://upload.wikimedia.org/wikipedia/en/8/80/BlackMilkAlbumoftheYear.jpg';
+		$warning->cover = 'http://2.bp.blogspot.com/_ffGoQXKzhQI/TUDpgvC54oI/AAAAAAAAAFw/0nHODtnUPqw/s320/BlackMilkAlbumoftheYear.jpg';
 		$warning->artist()->associate($blackmilk);
 		$warning->save();
 		$warning->tags()->attach($hiphop); 
@@ -118,7 +118,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$shortysaid = new Song;
 		$shortysaid->title = 'Shorty Said';
 		$shortysaid->published = 2010;
-		$shortysaid->cover = 'http://upload.wikimedia.org/wikipedia/en/8/81/Das-racist-shut-up-dude-front-nahright-450x450.jpg';
+		$shortysaid->cover = 'http://cdn.albumoftheyear.org/album/shut-up-dude.jpg';
 		$shortysaid->artist()->associate($dasracist);
 		$shortysaid->save();
 		$shortysaid->tags()->attach($alternative); 
@@ -128,7 +128,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$justrelax = new Song;
 		$justrelax->title = 'Just Relax';
 		$justrelax->published = 2007;
-		$justrelax->cover = 'http://img1.wikia.nocookie.net/__cb20120327203448/lyricwiki/images/0/04/Joe_-_Ain%27t_Nothin%27_Like_Me.jpg';
+		$justrelax->cover = 'https://rmusicb.files.wordpress.com/2009/12/joe-aint-nothin-like-me1.jpg';
 		$justrelax->artist()->associate($joe);
 		$justrelax->save();
 		$justrelax->tags()->attach($randb); 
@@ -138,7 +138,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$pearlsway = new Song;
 		$pearlsway->title = 'Lucy Pearls Way';
 		$pearlsway->published = 2000;
-		$pearlsway->cover = 'http://upload.wikimedia.org/wikipedia/en/a/af/Lucy_Pearl_album.jpg';
+		$pearlsway->cover = 'http://3.bp.blogspot.com/-Ti5MQLlgeQY/TyhdADOA2vI/AAAAAAAAAXM/gKN04tVP_tk/s1600/19.jpg';
 		$pearlsway->artist()->associate($lucypearl);
 		$pearlsway->save();
 		$pearlsway->tags()->attach($randb);
@@ -150,7 +150,7 @@ class ProjecthiphopSeeder extends Seeder {
 		$geniusedub = new Song;
 		$geniusedub->title = 'Genius E Dub';
 		$geniusedub->published = 2001;
-		$geniusedub->cover = 'http://upload.wikimedia.org/wikipedia/en/3/3f/Erick_Sermon_-_Music.jpg';
+		$geniusedub->cover = 'http://www.pit5.com/pics/music/Erick_Sermon_Al_Music.jpg';
 		$geniusedub->artist()->associate($erick);
 		$geniusedub->save();
 		$geniusedub->tags()->attach($hiphop); 

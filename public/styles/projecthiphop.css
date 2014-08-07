@@ -25,6 +25,11 @@ h2 {
 	margin-right:10px;
 }
 
+.cover img {
+	width: 20%;
+	height: auto;
+}
+
 a:link, a:visited, a:active, a:hover {
 	text-decoration:underline;
 }
