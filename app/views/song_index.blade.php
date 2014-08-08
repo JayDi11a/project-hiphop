@@ -35,7 +35,7 @@
 
 	@foreach($songs as $title => $song)
 		<section>
-
+			<br>
 			<img class='cover' src='{{ $song['cover'] }}'>
 
 
